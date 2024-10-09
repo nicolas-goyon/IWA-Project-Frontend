@@ -1,43 +1,27 @@
 {
   "expo": {
-    "name": "react-native-boilerplate",
-    "slug": "react-native-boilerplate",
-    "owner": "wataru",
-    "privacy": "unlisted",
+    "name": "iwa",
+    "slug": "iwa",
     "version": "1.0.0",
-    "platforms": ["ios", "android", "web"],
     "orientation": "portrait",
-    "icon": "./assets/images/logo-lg.png",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/logo-sm.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/images/logo-sm.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "18adc0d0-eb1d-11e9-8009-d524ed5cc4a7"
-      }
-    },
-    "updates": {
-      "url": "https://u.expo.dev/18adc0d0-eb1d-11e9-8009-d524ed5cc4a7"
-    },
-    "runtimeVersion": {
-      "policy": "sdkVersion"
-    },
-    "plugins": ["expo-asset", "expo-font"]
+      "favicon": "./assets/favicon.png"
+    }
   }
 }
