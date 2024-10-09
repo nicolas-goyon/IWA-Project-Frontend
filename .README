@@ -1,0 +1,11 @@
+## Dépendances
+
+redux
+expo-cli
+axios
+react-native-dotenv --save
+
+## Lancement
+
+npx expo start --tunel (si réseau public)
+être connecté au même réseau sur le téléphone et l'ordinateur
