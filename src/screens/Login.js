@@ -5,6 +5,7 @@ import { API_BASE_URL } from '@env';
 import { useDispatch } from 'react-redux';  
 import { login } from '../redux/authSlice'; 
 import Colors from '../Enums/Colors';
+import { AppLogo } from '../Enums/Images';
 
 
 
@@ -55,7 +56,7 @@ const Login = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.logoContainer}>
-        <Image source={require('../../assets/logo.png')} style={styles.logo} />
+        <Image source={AppLogo} style={styles.logo} />
       </View>
 
       <Text style={styles.title}>Connexion</Text>
