@@ -4,6 +4,10 @@ import axios from 'axios';
 import { API_BASE_URL } from '@env';
 import { useDispatch } from 'react-redux';  
 import { login } from '../redux/authSlice'; 
+import Colors from '../Enums/Colors';
+import Images from '../Enums/Images';
+
+
 
 const Login = ({ navigation }) => {
   const [email, setEmail] = useState('');
@@ -27,7 +31,7 @@ const Login = ({ navigation }) => {
     }
 
     if (!password) {
-      setPasswordError('Mot de passe est obligatoire');
+      setPasswordError('Moot de passe est obligatoire');
       isValid = false;
     }
 
@@ -52,7 +56,7 @@ const Login = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.logoContainer}>
-        <Image source={require('../../assets/logo.png')} style={styles.logo} />
+        <Image source={Images.AppLogo} style={styles.logo} alt="logo"/>
       </View>
 
       <Text style={styles.title}>Connexion</Text>
@@ -96,7 +100,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.WHITE,
   },
   logoContainer: {
     justifyContent: 'center',
@@ -114,12 +118,12 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: 'bold',
     marginBottom: 20,
-    color: '#173054',
+    color: Colors.NavyBlue,
     width: '100%',
     textAlign: 'left',
   },
   input: {
-    backgroundColor: '#E4F4FF',
+    backgroundColor: Colors.LightBlue,
     width: '100%',
     padding: 15,
     borderRadius: 10,
@@ -127,11 +131,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   errorInput: {
-    borderColor: 'red',
+    borderColor: Colors.Red,
     borderWidth: 1,
   },
   errorText: {
-    color: 'red',
+    color: Colors.Red,
     marginBottom: 10,
     textAlign: 'left',
     width: '100%',
@@ -145,19 +149,19 @@ const styles = StyleSheet.create({
   signupLink: {
     fontSize: 14,
     fontStyle: 'italic',
-    color: '#666',
+    color: Colors.Gray,
     marginBottom: 20,
     width: '100%',
     textAlign: 'left',
   },
   signupText: {
-    color: '#1E5AFF',
+    color: Colors.Blue,
     fontWeight: 'bold',
     fontStyle: 'italic',
     textDecorationLine: 'underline',
   },
   loginButton: {
-    backgroundColor: '#F78E3B',
+    backgroundColor: Colors.Orange,
     paddingVertical: 15,
     paddingHorizontal: 10,
     borderRadius: 20,
@@ -166,7 +170,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   loginButtonText: {
-    color: '#fff',
+    color: Colors.White,
     fontSize: 24,
     fontWeight: 'bold',
   },
