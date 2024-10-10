@@ -5,6 +5,7 @@ import { store } from './src/redux/store';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Login from './src/screens/Login';
+import ProfilEdit from './src/screens/ProfilEdit';
 
 const Stack = createStackNavigator();
 
@@ -15,6 +16,7 @@ function AppContent() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
         <Stack.Screen name="Login" component={Login}  options={{ headerShown: false }}  />
+        <Stack.Screen name="ProfilEdit" component={ProfilEdit}  options={{ headerShown: false }}  />
       </Stack.Navigator>
     </NavigationContainer>
   );
